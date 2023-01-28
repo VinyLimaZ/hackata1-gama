@@ -6,7 +6,6 @@ require_relative 'exceptions/extension_not_supported'
 class Print
   class << self
     def call(string, filename:, extension:)
-      validate(extension)
       print(string, filename, extension)
     end
 
